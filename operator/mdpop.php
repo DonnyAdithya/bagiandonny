@@ -17,7 +17,6 @@
       <!-- bootstrap css -->
       <link rel="stylesheet" href="css/bootstrap.min.css" />
       <!-- CSS only -->
-      <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/css/bootstrap.min.css" rel="stylesheet" >
       <link href="https://cdn.datatables.net/1.11.3/css/dataTables.bootstrap5.min.css" rel="stylesheet" >
       <!-- site css -->
       <link rel="stylesheet" href="style.css" />
@@ -33,7 +32,16 @@
       <link rel="stylesheet" href="css/custom.css" />
       <!-- calendar file css -->
       <link rel="stylesheet" href="js/semantic.min.css" />
-
+      <!-- Google font -->
+      <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet"> 
+      <!-- Bootstrap -->
+      <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+      <!-- Custom stlylesheet -->
+      <link type="text/css" rel="stylesheet" href="css/insert.css" />
+      <!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	  <![endif]-->
       <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
@@ -141,7 +149,7 @@
                                    <h2>Master Data Product</h2>
                                 </div>
                              </div>
-                                <div class="table_section padding_infor_info" >
+                                <div class="table_section padding_infor_info table table-striped" >
                                    <div class="table">
                                    
                                    <table class="table" id="dataTable" style="background-image: url('images/layout_img/pattern_h.png');">

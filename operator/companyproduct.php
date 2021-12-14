@@ -17,7 +17,6 @@
       <!-- bootstrap css -->
       <link rel="stylesheet" href="css/bootstrap.min.css" />
       <!-- CSS only -->
-      <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/css/bootstrap.min.css" rel="stylesheet" >
       <link href="https://cdn.datatables.net/1.11.3/css/dataTables.bootstrap5.min.css" rel="stylesheet" >
       <!-- site css -->
       <link rel="stylesheet" href="style.css" />
@@ -33,6 +32,16 @@
       <link rel="stylesheet" href="css/custom.css" />
       <!-- calendar file css -->
       <link rel="stylesheet" href="js/semantic.min.css" />
+      <!-- Google font -->
+      <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet"> 
+      <!-- Bootstrap -->
+      <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+      <!-- Custom stlylesheet -->
+      <link type="text/css" rel="stylesheet" href="css/insert.css" />
+      <!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	  <![endif]-->
       <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
@@ -126,7 +135,7 @@
                      <div class="row column_title">
                         <div class="col-md-12">
                            <div class="page_title">
-                              <h2>Category Product</h2>
+                              <h2>Company Product</h2>
                            </div>
                         </div>
                      </div>
@@ -139,7 +148,7 @@
                                    <h2>Company Product</h2>
                                 </div>
                              </div>
-                                <div class="table_section padding_infor_info" >
+                                <div class="table_section padding_infor_info table table-striped" >
                                    <div class="table">
                                    
                                    <table class="table" id="dataTable" style="background-image: url('images/layout_img/pattern_h.png');">
@@ -169,11 +178,11 @@
                                         <td class='text-left align-left'><?=$id_barang;?></td> 
                                         <td class='text-left align-left'><?=$perusahaan;?></td> 
                                         <td class='text-center align-center'>
-                                            <button type='button' name='edit' class='btn btn-outline-success btn-lg' data-toggle='modal' data-target='#update<?=$id_barang;?>'>
+                                            <button type='button' name='edit' class='btn btn-outline-success' data-toggle='modal' data-target='#update<?=$id_barang;?>'>
                                             <i class='fa fa-pencil  black_color'></i> 
                                             </button>
                                             <input type ="hidden" name='idbaranghapus' value="<?=$id_barang;?>">
-                                            <button type='button' name='delete' class='btn btn-outline-danger btn-lg' data-toggle='modal' data-target='#delete<?=$id_barang;?>'>
+                                            <button type='button' name='delete' class='btn btn-outline-danger' data-toggle='modal' data-target='#delete<?=$id_barang;?>'>
                                             <i class='fa fa-trash-o  black_color'></i> 
                                             </button>
                                         </td>

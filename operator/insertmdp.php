@@ -17,7 +17,6 @@
       <!-- bootstrap css -->
       <link rel="stylesheet" href="css/bootstrap.min.css" />
       <!-- CSS only -->
-      <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/css/bootstrap.min.css" rel="stylesheet" >
       <link href="https://cdn.datatables.net/1.11.3/css/dataTables.bootstrap5.min.css" rel="stylesheet" >
       <!-- site css -->
       <link rel="stylesheet" href="style.css" />
@@ -180,9 +179,8 @@
                                                     </div>
                                                     <div class="form-group">
                                                         <span class="form-label">Images</span>
-                                                        <div class="input-group mb-3">
-                                                            <input type="file" class="form-control h-auto" id="inputGroupFile01" name="namafile"> 
-                                                            <label class="input-group-text" for="inputGroupFile01"><i class="fa fa-file-image-o "></i> Upload</label>
+                                                        <div class="input-group ">
+                                                            <input type="file" class="form-control" style="height:auto" id="inputGroupFile01" name="namafile"> 
                                                         </div>
                                                     </div>
                                                     <div class="row">
