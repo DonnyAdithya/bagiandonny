@@ -242,9 +242,7 @@ a.btn {
     margin-top: 10px;
 }
 --*/
-.modal-dialog{
-    background-color: white;
-}
+
 .red_bg {
     background: #ff4748;
 }
@@ -470,14 +468,6 @@ a:focus {
 
 .brown_color {
     color: #795548 !important;
-}
-
-.black_color {
-    color: #000000;
-}
-
-.white_color {
-    color: #ffffff !important;
 }
 
 .brown_bg {

@@ -8,7 +8,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="viewport" content="initial-scale=1, maximum-scale=1">
       <!-- site metas -->
-      <title>Pluto - Responsive Bootstrap Admin Panel Templates</title>
+      <title>Testimoni Visitor</title>
       <meta name="keywords" content="">
       <meta name="description" content="">
       <meta name="author" content="">
@@ -68,9 +68,10 @@
                <div class="sidebar_blog_2">
                   <h4>General</h4>
                   <ul class="list-unstyled components">
-                     <li ><a href="dashboardvis.html"><i class="fa fa-dashboard yellow_color"></i> <span>Dashboard</span></a></li>
-                     <li><a href="mdp.html"><i class="fa fa-desktop orange_color2"></i> <span>Master Data Product</span></a></li>
+                     <li ><a href="dashboardvis.php"><i class="fa fa-dashboard yellow_color"></i> <span>Dashboard</span></a></li>
+                     <li><a href="mdp.php"><i class="fa fa-desktop orange_color2"></i> <span>Master Data Product</span></a></li>
                      <li><a href="testimoni.php"><i class="fa fa-comments-o red_color"></i> <span>Testimoni</span></a></li>
+                     <li><a href="commentVisitor.php"><i class="fa fa-thumbs-o-up green_color"></i> <span>Commentar</span></a></li>
                   </ul>
                </div>
             </nav>
@@ -109,6 +110,7 @@
                   </nav>
                </div>
                <!-- end topbar -->
+               
                <!-- dashboard inner -->
                <div class="midde_cont">
                   <div class="container-fluid">
@@ -121,77 +123,73 @@
                      </div>
                      <!-- row -->
                      <div class="row column1">
-                       <div class="col-lg-12">
-                          <div class="white_shd full margin_bottom_30">
-                             <div class="full graph_head">
-                                <div class="heading1 margin_0">
-                                   <h2>Testimoni</h2>
-                                </div>
-                             </div>
-                             <div class="contain">
-                                <div class="section-center">
-                                    <div class="container">
-                                        <div class="row">
-                                            <div class="booking-form">
+                        <div class="col-lg-12">
+                           <div class="white_shd full margin_bottom_30">
+                              <div class="full graph_head">
+                                 <div class="heading1 margin_0">
+                                    <h2>Testimoni</h2>
+                                 </div>
+                              </div>
+                              <div class="contain">
+                                 <div class="section-center">
+                                       <div class="container">
+                                          <div class="row">
+                                             <div class="booking-form mx-auto">
                                                 <form method="POST">
-                                                    <div class="form-group">
-                                                        <span class="form-label">Name</span>
-                                                        <input class="form-control" name="name" type="text" placeholder="Masukkann Nama Anda" required="">
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <span class="form-label">E-Mail</span>
-                                                        <input class="form-control" name="email" type="email" placeholder="Masukkan E-Mail Anda" required="">
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <span class="form-label">Date</span>
-                                                        <input class="form-control" name="date" type="date" placeholder="Masukkan Tanggal Hari Ini" required="">
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <span class="form-label">Testimoni</span>
-                                                        <textarea name="test" id="test">
-                                                        Berikan Testimoni Anda !!!
-                                                        </textarea>
-                                                    </div>
-                                                    <div class="row">
-                                                        <div class="col-sm-6">
-                                                            <div class="form-btn">
-                                                                <button type="submit" class="btn btn-outline-light btn-lg orange_color" name="buttonins"> <i class="fa fa-check orange_color"></i> SAVE </button>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-sm-6">
-                                                            <div class="form-btn">
-                                                                <a type="button" class="btn btn-outline-danger btn-lg" name="buttoncnc"  href="dashboardvis.html"><i class="fa fa-times" style="color: white;"></i> CANCEL </a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
+                                                   <div class="form-group">
+                                                      <span class="form-label">Name</span>
+                                                      <input class="form-control" name="name" type="text" placeholder="Masukkan Nama Anda" required="">
+                                                   </div>
+                                                   <div class="form-group">
+                                                      <span class="form-label">E-Mail</span>
+                                                      <input class="form-control" name="email" type="email" placeholder="Masukkan E-Mail Anda" required="">
+                                                   </div>
+                                                   <div class="form-group">
+                                                      <span class="form-label">Date</span>
+                                                      <input class="form-control" name="date" type="date" placeholder="Masukkan Tanggal Hari Ini" required="">
+                                                   </div>
+                                                   <div class="form-group">
+                                                      <span class="form-label">Testimoni</span>
+                                                      <textarea name="test" id="test">
+                                                         Berikan Testimoni Anda !!!
+                                                      </textarea>
+                                                   </div>
+                                                   <div class="row mb-4">
+                                                      <div class="col-sm-6">
+                                                         <div class="form-btn mx-auto">
+                                                            <button type="submit" class="btn btn-outline-success btn-lg mr-3" name="buttonins"><i class="fa fa-check-circle orange_color"></i> SAVE</button>
+                                                            <button type="button" class="btn btn-outline-danger btn-lg" name="buttoncnc" href="dashboardvis.php"><i class="fa fa-times orange_color"></i> CANCEL</button>
+                                                         </div>
+                                                      </div>
+                                                   </div>
 
-                                                    <?php
-                                                    require_once'../includes/koneksi.php';
-                                                    
-                                                    
-                                                    if(isset($_POST['buttonins'])){
-                                                        $nama = $_POST['name'];
-                                                        $email = $_POST['email'];
-                                                        $tanggal = $_POST['date'];
-                                                        $comment = $_POST['test'];
+                                                   <?php
+                                                   require_once'../includes/koneksi.php';
+                                                   
+                                                   
+                                                   if(isset($_POST['buttonins'])){
+                                                      $nama = $_POST['name'];
+                                                      $email = $_POST['email'];
+                                                      $tanggal = $_POST['date'];
+                                                      $comment = $_POST['test'];
 
-                                                        $sql = "INSERT INTO komentar (nama, email, tanggal, comment) VALUES ('$nama','$email','$tanggal','$comment')";
-																			
-			                                            if($koneksi->query($sql)===TRUE){
-                                                        echo "<script>setTimeout(\"location.href = 'dashboardvis.html';\",1500);</script>";
-			                                            } else {
-				                                        echo "Terjadi kesalahan:".$sql."<br/>".$koneksi->error;
-			                                            }  
-                                                    }
-                                                    ?>
+                                                      $sql = "INSERT INTO komentar (nama, email, tanggal, comment) VALUES ('$nama','$email','$tanggal','$comment')";
+                                                         
+                                                   if($koneksi->query($sql)===TRUE){
+                                                      echo "<script>setTimeout(\"location.href = 'dashboardvis.php';\",1500);</script>";
+                                                   } else {
+                                                   echo "Terjadi kesalahan:".$sql."<br/>".$koneksi->error;
+                                                   }  
+                                                   }
+                                                   ?>
                                                 </form>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                             </div>
-                          </div>
-                       </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
                         <!-- end row -->
                      </div>
                      <!-- footer -->
@@ -233,9 +231,9 @@
       <!-- calendar file css -->     
       <script src="js/semantic.min.js"></script>
       <script>
-        CKEDITOR.replace( 'test',{
-            uiColor: '#f78a09',
-        } );
+         CKEDITOR.replace( 'test',{
+               uiColor: '#f78a09',
+         } );
       </script>
    </body>
 </html>
