@@ -209,7 +209,7 @@
                                                         $direktori = "../operator/gambar/";
                                                         $file_name=$_FILES['namafile']['name'];
                                                         move_uploaded_file($_FILES['namafile']['tmp_name'],$direktori.$file_name);
-                                                        $sql = "INSERT INTO data_produk (id_barang, product, perusahaan, stok, harga, gambar) VALUES ('$id_barang','$description','$company','$stock','$price','$file_name')";
+                                                        $sql = "INSERT INTO data_produk (id_barang, produk, perusahaan, stok, harga, gambar) VALUES ('$id_barang','$description','$company','$stock','$price','$file_name')";
 																			
 			                                            if($koneksi->query($sql)===TRUE){
                                                         echo "<script>setTimeout(\"location.href = 'mdpop.php';\",1500);</script>";

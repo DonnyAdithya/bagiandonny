@@ -175,7 +175,7 @@
 
                                          while ($data = mysqli_fetch_array($SQL_QUERY)){
                                              $id_barang=$data['id_barang'];
-                                             $product=$data['product'];
+                                             $product=$data['produk'];
                                              $perusahaan=$data['perusahaan'];
                                              $stok=$data['stok'];
                                              $harga=$data['harga'];
@@ -331,7 +331,7 @@
                                             $price = $_POST['price'];
                                             
                                             if ($koneksi){
-                                             $update = "UPDATE data_produk SET product='$description', perusahaan='$company', stok='$stock', harga='$price' WHERE id_barang=$id";
+                                             $update = "UPDATE data_produk SET produk='$description', perusahaan='$company', stok='$stock', harga='$price' WHERE id_barang=$id";
                                              mysqli_query($koneksi,$update);
                                              echo "<script>setTimeout(\"location.href = 'mdpop.php';\",1500);</script>";
                                     
