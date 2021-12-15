@@ -147,9 +147,9 @@ include "../includes/koneksi.php";
                                         <h2>Commentar</h2>
                                     </div>
                                 </div>
-                                <div class="contain">
+                                <div class="contain mx-5 mt-3">
                                     <div class="section-center">
-                                        <div class="container">
+                                        <!-- <div class="container"> -->
                                             <div class="booking-form">
                                                 <form method="POST" id="comment_form">
                                                     <div class="form-group">
@@ -170,7 +170,7 @@ include "../includes/koneksi.php";
                                                 <br>
                                                 <div id="display_comment"></div>
                                             </div>
-                                        </div>
+                                        <!-- </div> -->
                                     </div>
                                 </div>
                             </div>

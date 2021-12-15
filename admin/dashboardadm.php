@@ -139,7 +139,7 @@ session_start();
                                     <div class="content">
                                        <div class="container">
                                           <div class="text">
-                                             <h5>Hello<h5/>
+                                             <h5>Hello</h5>
                                              <h5>
                                                 <span class="word wisteria">World.</span>
                                                 <span class="word belize"><?= $_SESSION['username'] ?></span>
@@ -465,10 +465,9 @@ session_start();
                                                       </div>
                                                    </form>
                                              </div>
-                                             <div class="container">
+                                             <!-- <div class="container"> -->
                                                 <div id="calendar"></div>
-                                             </div>
-
+                                             <!-- </div> -->
                                              <!-- Update dan Delete Jadwal Kalendar -->
                                              <div class="table-responsive mt-5">
                                                 <table class="table table-bordered table-striped table-hover">

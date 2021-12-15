@@ -149,7 +149,7 @@ session_start();
                                     <div class="content">
                                        <div class="container">
                                           <div class="text">
-                                             <h5>Hello<h5/>
+                                             <h5>Hello</h5>
                                              <h5>
                                                 <span class="word wisteria">World.</span>
                                                 <span class="word belize"><?= $_SESSION['username'] ?></span>
